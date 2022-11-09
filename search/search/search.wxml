@@ -1,0 +1,9 @@
+<view class="input_box">
+  <navigator  class="nav" url="/pages/index/index" open-type="redirect" style="width: 100rpx;text-align: center;background-color: #ffffff;">
+      <text decode="true">&lt;-</text>
+  </navigator>
+  <input bindinput='getInputValue' type="text" value="{{search}}"/>
+  <button class="search_button" bindtap="toSearch_result">搜索</button>
+</view>
+<text>猜你喜欢</text>
+<text class="interest_tag" bindtap="toSearch_result" wx:for="{{tag}}">{{item}}</text>
